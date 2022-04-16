@@ -1,0 +1,51 @@
+<% if((typeof results != 'undefined') && Array.isArray(results)) { %>
+  <% results.forEach((result) => { %>
+    <div class="result-item row my-2">
+      <h2 class="result-title"><%= result.title %></h2>
+
+      <a href="<%= result.link %>"
+        class="result-link">
+      <%= result.link %>
+      </a>
+
+      <p class="result-description">
+        <%= result.description %>
+      </p>
+
+      <!-- <hr> -->
+
+      <!-- <p class="result-more-text">
+        <%= result.additional_links[0].text %>
+      </p> -->
+        
+      <a href="<%= result.additional_links[0].text %>"
+        class="result-link my-1">
+        <%= result.additional_links[0].text %>
+      </a>
+
+      <hr>
+    
+    <!-- <div class="result-item-more row">
+      <div class="col-12 col-md-6">
+        <p class="result-more-text">
+          <%= result.additional_links[0].text %>
+        </p>
+          
+        <a href="<%= result.additional_links[0].text %>"
+          class="result-link">
+          <%= result.additional_links[0].text %>
+        </a>
+      </div>
+      
+    </div> -->
+
+  <% }); %>
+<% } %>
+
+<% if(typeof error != 'undefined') { %>
+  <div id="error">
+    <p>
+      <%= error.message %>
+    </p>
+  </div>
+<% } %>

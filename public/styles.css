@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Gentium+Basic&family=Libre+Baskerville&family=Lobster&family=Proza+Libre&family=Trirong&display=swap');
+
+body {
+  font-family: 'Libre Baskerville';
+  /* height: 100vh; */
+}
+
+
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+
+#search-query{
+  outline: none;
+}
+
+#search-query:hover {
+
+}
+
+/* #search-button {
+  height: 100%;
+} */

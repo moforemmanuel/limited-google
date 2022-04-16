@@ -1,0 +1,35 @@
+<header>
+  
+</header>
+<main>
+  <div id="main" class="container-fluid">
+    <div id="sections" class="row center">
+      <div id="heading" class="col-12 center mt-5">
+        <h1>Limited Google</h1>
+      </div>
+      <form id="form" action="/search" method="post">
+        <div id="search" class="col-12 mt-2 input-group center">
+          <div class="form-outline">
+            <input type="search" id="search-query" name="searchQuery" class="form-control">
+            <!-- <label for="search-query" class="form-label">Search</label> -->
+          </div>
+          <button type="submit" id="search-button" class="btn btn-primary ">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+    
+
+
+    </div>
+  </div>
+</main>
+<script>
+  document.getElementById('form').addEventListener('submit', (e) => {
+    // e.preventDefault();
+    Swal.fire('Please wait');
+    Swal.showLoading();
+
+  });
+      
+</script>
